@@ -1,8 +1,23 @@
-// Write your code here
 
 
+const products = ["Laptop", "Phone", "Headphones", "Monitor"];
 
-// Export the necessary parts for testing
+function logFirstProduct() {
+  console.log(products[0]);
+}
+
+function addProduct(productName) {
+  products.push(productName);
+}
+
+function updateProductName(position, newName) {
+  products[position] = newName;
+}
+
+function removeLastProduct() {
+  products.pop();
+}
+
 module.exports = {
   logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
   addProduct: typeof addProduct !== 'undefined' ? addProduct : undefined,
